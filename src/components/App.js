@@ -56,7 +56,7 @@ class App extends Component {
   render() {
     return (
       <>
-        <Section title={"Phonebook"}>
+        <Section title={"Phonebook with LocalStorage"}>
           <PhonebookForm addNewContact={this.addNewContact} />
         </Section>
         <Section title={"Contacts"}>
