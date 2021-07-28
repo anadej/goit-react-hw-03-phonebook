@@ -35,7 +35,10 @@ class App extends Component {
 
   addNewContact = (contact) => {
     if (
-      this.state.contacts.some((stateItem) => stateItem.name === contact.name)
+      this.state.contacts.some(
+        (stateItem) =>
+          stateItem.name.toLowerCase() === contact.name.toLowerCase()
+      )
     ) {
       alert(contact.name + " is already in contact list");
       return;
